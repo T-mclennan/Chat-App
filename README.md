@@ -1,11 +1,5 @@
-# Aspiring Devs Final Project:
 
- # @author   Ratna Lama
  # @author   Tristan Mclennan
- # @author   Noureddine Youssfi
- # @author   Dawit Ayele
- # @author   Tigist Ambaw
- # @author   Saad Bouayad
    
 Requirements for project:
 - Express back end with get/post endpoints
