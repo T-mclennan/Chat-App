@@ -1,6 +1,8 @@
 
  # @author   Tristan Mclennan
-   
+ # This was a school project from CS 667: We never fully finished the docker deployment due to time constraints.
+ # I'm looking to figure out what the bugs are, get it deployed, and then polish it and add functionality. 
+ 
 Requirements for project:
 - Express back end with get/post endpoints
 - Mongodb for storage
