@@ -14,4 +14,4 @@ Requirements for project:
 - Node components can use either docker or pm2 (cluster)
 - Use at least 1 kafka message topic to broadcast real time updates (can get extra credit with this)
 - Bonus points for an electron port with some native functionality.
-- Finally reverse proxy with NGNIX
+- Hopefully reverse proxy with NGNIX
