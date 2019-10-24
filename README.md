@@ -1,7 +1,6 @@
 
  # @author   Tristan Mclennan
- # This was a school project from CS 667: We never fully finished the docker deployment due to time constraints.
- # I'm looking to figure out what the bugs are, get it deployed, and then polish it and add functionality. 
+ # This was a school project from CS 667, I'm looking to refactor and re-deploy it soon! 
  
 Requirements for project:
 - Express back end with get/post endpoints
