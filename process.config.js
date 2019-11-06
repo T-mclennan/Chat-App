@@ -21,13 +21,20 @@ module.exports = { // pm2 start process.config.js
       instances: 1,
       exec_mode: 'cluster',
     },
+    {
+      name: 'userList',
+      script: './server/userList.js',
+      watch: true,
+      instances: 1,
+      exec_mode: 'cluster',
 
-  {
-    name: 'userList',
-    script: './server/userList.js',
-    watch: true,
-    instances: 1,
-    exec_mode: 'cluster',
+    },
+    {
+      name: 'frontend',
+      script: './server/frontend.js',
+      watch: true,
+      instances: 1,
+      exec_mode: 'cluster',
 
-  },
+    },
 ]};
