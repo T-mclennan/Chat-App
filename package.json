@@ -2,6 +2,10 @@
   "name": "chat-app",
   "version": "0.1.0",
   "private": true,
+  "engines" : {
+    "node" : "12.8.0",
+    "npm" : "6.10.2"
+  },
   "proxy": "http://localhost:4000",
   "dependencies": {
     "axios": "^0.18.1",
@@ -25,7 +29,7 @@
     "ws": "^6.2.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "pm2 start process.config.js && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -35,7 +39,8 @@
     "build-frontend": "docker build -f frontend.Dockerfile -t react . && docker tag react tmclennan/react && docker push tmclennan/react",
     "build-all-docker": "",
     "deploy": "docker-compose -f devops/docker-compose.yml pull && docker stack deploy -c devops/docker-compose.yml message-app",
-    "stop": "docker stack remove message-app"
+    "stop": "docker stack remove message-app",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Chat-App && npm run build --prefix Chat-App" 
   },
   "eslintConfig": {
     "extends": "react-app"
