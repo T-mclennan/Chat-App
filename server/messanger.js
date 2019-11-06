@@ -2,8 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const { MongoClient } = require('mongodb');
 const redis = require('redis');
-const client = redis.createClient();
-
+const client = redis.createClient(process.env.REDIS_URL);
 
 // const url = 'mongodb://localhost:27017';
 const url = 'mongodb://heroku_46bh5m94:bd84pnvhi2b71538d2vehja60m@ds241278.mlab.com:41278/heroku_46bh5m94';

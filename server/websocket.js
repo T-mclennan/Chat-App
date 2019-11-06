@@ -1,6 +1,6 @@
 const WebSocket = require('ws');
 const redis = require('redis');
-const client = redis.createClient();
+const client = redis.createClient(process.env.REDIS_URL);
 const axios = require('axios');
 const messangerHost = process.env.MESSANGER_HOST || 'http://localhost:5000';
 
