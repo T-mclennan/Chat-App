@@ -4,7 +4,8 @@ const { MongoClient } = require('mongodb');
 
 
 //mongo init:
-const url = 'mongodb://localhost:27018';
+// const url = 'mongodb://localhost:27018';
+const url = 'mongodb://<dbuser>:<dbpassword>@ds241278.mlab.com:41278/heroku_46bh5m94';
 const mongoClient = new MongoClient(url);
 
 mongoClient.connect((err) => {
