@@ -1,12 +1,7 @@
-# Aspiring Devs Final Project:
 
- # @author   Ratna Lama
  # @author   Tristan Mclennan
- # @author   Noureddine Youssfi
- # @author   Dawit Ayele
- # @author   Tigist Ambaw
- # @author   Saad Bouayad
-   
+ # This was a school project from Internet Application Design (CS 667), I'm looking to refactor and re-deploy it soon! 
+ 
 Requirements for project:
 - Express back end with get/post endpoints
 - Mongodb for storage
@@ -18,4 +13,4 @@ Requirements for project:
 - Node components can use either docker or pm2 (cluster)
 - Use at least 1 kafka message topic to broadcast real time updates (can get extra credit with this)
 - Bonus points for an electron port with some native functionality.
-- Finally reverse proxy with NGNIX
+- Hopefully reverse proxy with NGNIX
