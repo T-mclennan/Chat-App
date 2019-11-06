@@ -39,8 +39,7 @@
     "build-frontend": "docker build -f frontend.Dockerfile -t react . && docker tag react tmclennan/react && docker push tmclennan/react",
     "build-all-docker": "",
     "deploy": "docker-compose -f devops/docker-compose.yml pull && docker stack deploy -c devops/docker-compose.yml message-app",
-    "stop": "docker stack remove message-app",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix Chat-App && npm run build --prefix Chat-App" 
+    "stop": "docker stack remove message-app"
   },
   "eslintConfig": {
     "extends": "react-app"
