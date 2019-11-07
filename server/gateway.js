@@ -28,7 +28,7 @@ app.all('/messanger*', (req, res) => {
   apiProxy.web(req, res, { target: messangerHost });
 });
 
-const userHost = process.env.WEBSOCKET_HOST || 'http://localhost:7000';
+const userHost = process.env.USER_HOST || 'http://localhost:7000';
 console.log(`UserList end proxies to: ${userHost}`);
 app.all('/userList*', (req, res) => {
   apiProxy.web(req, res, { target: userHost });
