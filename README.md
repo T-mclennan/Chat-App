@@ -1,6 +1,6 @@
 
- # @author   Tristan Mclennan
- # This was a school project from Internet Application Design (CS 667), I'm looking to refactor and re-deploy it soon! 
+ # Chat Application 
+ ## school project from Internet Application Design (CS 667), I'm looking to refactor and re-deploy soon! 
  
 Requirements for project:
 - Express back end with get/post endpoints
